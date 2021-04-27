@@ -26,4 +26,6 @@
     </rosparam>
   </node>
 
+  <node name="look_away" type="look_away" pkg="simple_arm" />
+
 </launch>
