@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+catkin_workspace/devel
+catkin_workspace/build
