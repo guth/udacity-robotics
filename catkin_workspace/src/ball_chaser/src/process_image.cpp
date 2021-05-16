@@ -80,18 +80,18 @@ void process_image_callback(const sensor_msgs::Image image)
         float angular_z = 0.0;
         if (w_avg <= left)
         {
-            linear_x = 0.1;
-            angular_z = 0.1;
+            linear_x = 0.20;
+            angular_z = 0.20;
         }
         else if(w_avg >= left && w_avg <= right)
         {
-            linear_x = 0.1;
+            linear_x = 0.20;
             angular_z = 0.0;
         }
         else // w_avg > right
         {
-            linear_x = 0.1;
-            angular_z = -0.1;
+            linear_x = 0.20;
+            angular_z = -0.20;
         }
 
         drive_robot(linear_x, angular_z);
